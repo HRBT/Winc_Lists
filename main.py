@@ -76,6 +76,8 @@ for i in range(len(lower_a)):
     lower_a[i] = lower_a[i].lower()
 print(lower_a)
 
+print(list)
+
 print()
 
 list = lower_a
@@ -86,19 +88,27 @@ def won_golden_globe(x):
     else:
         return(False)
 
-won_golden_globe('superman')
-won_golden_globe('celeste')
+#won_golden_globe('superman')
+#won_golden_globe('celeste')
+won_golden_globe('JAWS')
 
+print()
 
-# Exercise 3
+#print('Exercise 3')
 
 toto_albums = ['Fahrenheit', 'The Seventh ONe', 'Toto XX', 'Falling in Between', 'Toto XIV', 'Old is New']
+for i in range(len(toto_albums)):
+    toto_albums[i] = toto_albums[i].lower()
+print(toto_albums)
+
+print()
 
 list_accidentally = list + toto_albums
 print(list_accidentally)
 
-# print(len(toto_albums))
+print()
 
+# print(len(toto_albums))
 
 def remove_toto_albums(x):
     if toto_albums[0] in x:
@@ -113,7 +123,7 @@ def remove_toto_albums(x):
         x.remove(toto_albums[4])
     if toto_albums[5] in x:
         x.remove(toto_albums[5])
-        return(list_accidentally)
+        print(list_accidentally)
 
 remove_toto_albums(list_accidentally)
  
