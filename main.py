@@ -36,7 +36,7 @@ a = ['The Poseidon Adventure',
 
 def alphabetical_order(x):
     alpha_sorted_list = sorted(x)
-    print(alpha_sorted_list)
+    return(alpha_sorted_list)
 
 alphabetical_order(a)
 
@@ -82,9 +82,9 @@ list = lower_a
 
 def won_golden_globe(x):
     if x in list:
-        print(True)
+        return(True)
     else:
-        print(False)
+        return(False)
 
 won_golden_globe('superman')
 won_golden_globe('celeste')
@@ -97,7 +97,7 @@ toto_albums = ['Fahrenheit', 'The Seventh ONe', 'Toto XX', 'Falling in Between',
 list_accidentally = list + toto_albums
 print(list_accidentally)
 
-print(len(toto_albums))
+# print(len(toto_albums))
 
 
 def remove_toto_albums(x):
@@ -113,7 +113,7 @@ def remove_toto_albums(x):
         x.remove(toto_albums[4])
     if toto_albums[5] in x:
         x.remove(toto_albums[5])
-        print(list_accidentally)
+        return(list_accidentally)
 
 remove_toto_albums(list_accidentally)
  
