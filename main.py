@@ -127,4 +127,7 @@ def remove_toto_albums(x):
        
 #remove_toto_albums(list_accidentally)
 print(remove_toto_albums(list_accidentally))
- 
+
+print()
+
+print(list_accidentally)
