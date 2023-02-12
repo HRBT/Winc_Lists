@@ -83,7 +83,7 @@ print()
 list = lower_a
 
 def won_golden_globe(x):
-    if x in list:
+    if x.lower() in list:
         return(True)
     else:
         return(False)
@@ -123,7 +123,8 @@ def remove_toto_albums(x):
         x.remove(toto_albums[4])
     if toto_albums[5] in x:
         x.remove(toto_albums[5])
-        print(list_accidentally)
-
-remove_toto_albums(list_accidentally)
+    return(list_accidentally)
+       
+#remove_toto_albums(list_accidentally)
+print(remove_toto_albums(list_accidentally))
  
